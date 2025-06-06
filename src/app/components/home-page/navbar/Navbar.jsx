@@ -36,7 +36,7 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-black shadow fixed top-0 left-0 z-50">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <nav className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
         <img src="assets\eduden-logo.png" className="w-[207px] h[55px] cursor-pointer"></img>
 
