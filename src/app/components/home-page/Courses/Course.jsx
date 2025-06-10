@@ -1,100 +1,217 @@
-import React from 'react'
-import { TfiLayoutLineSolid } from 'react-icons/tfi';
+"use client";
+import React, { useState } from "react";
+import { TfiLayoutLineSolid } from "react-icons/tfi";
+import { IoIosPeople } from "react-icons/io";
+import { LuClock } from "react-icons/lu";
+import { FaRegComments } from "react-icons/fa6";
 
-const Course = () => {
-  const courses = [
+const categories = [
+  "Show All",
+  "Graphics Design",
+  "Ux/UI Design",
+  "Web Development",
+  "Mobile App Development",
+  "Programming",
+  "Ethical Hacking",
+];
+
+const courses = [
   {
     id: 1,
-    title: 'React for Beginners',
-    heading: 'Master React JS',
-    subtitle: 'Learn the basics of React',
-    price: '$49',
-    rating: '⭐ 4.5',
-    image: 'https://via.placeholder.com/300x200',
+    category: "Cyber Security",
+    title: "UI/UX Design for Web and Mobile for Kids",
+    subtitle:
+      "we're your one-stop destination for unlocking your potential and conquering the digital.",
+    price: "$120",
+    rating: 5,
+    image: "assets/course-img/Cyber-Security.jpg",
+    students: "25",
+    duration: "36hr",
+    views: "2.5k",
+    featured: false,
   },
   {
     id: 2,
-    title: 'Advanced CSS',
-    heading: 'CSS Masterclass',
-    subtitle: 'Advanced styling techniques',
-    price: '$59',
-    rating: '⭐ 4.7',
-    image: 'https://via.placeholder.com/300x200',
+    category: "Graphics Design",
+    title: "Introduce About Graphic Design for Beginners",
+    subtitle:
+      "we're your one-stop destination for unlocking your potential and conquering the digital.",
+    price: "$120",
+    rating: 5,
+    image: "assets/course-img/Cyber-Security.jpg",
+    students: "25",
+    duration: "36hr",
+    views: "2.5k",
+    featured: true,
   },
   {
     id: 3,
-    title: 'JavaScript Essentials',
-    heading: 'Master JS',
-    subtitle: 'Understand core concepts',
-    price: '$39',
-    rating: '⭐ 4.6',
-    image: 'https://via.placeholder.com/300x200',
+    category: "Cyber Security",
+    title: "Introduction to Python Programming",
+    subtitle:
+      "we're your one-stop destination for unlocking your potential and conquering the digital.",
+    price: "$120",
+    rating: 5,
+    image: "assets/course-img/Cyber-Security.jpg",
+    students: "25",
+    duration: "36hr",
+    views: "2.5k",
+    featured: false,
   },
   {
     id: 4,
-    title: 'Node.js API',
-    heading: 'Build APIs',
-    subtitle: 'Create REST APIs with Node',
-    price: '$69',
-    rating: '⭐ 4.8',
-    image: 'https://via.placeholder.com/300x200',
+    category: "Cyber Security",
+    title: "Data Science and Machine Learning",
+    subtitle:
+      "we're your one-stop destination for unlocking your potential and conquering the digital.",
+    price: "$120",
+    rating: 5,
+    image: "assets/course-img/Cyber-Security.jpg",
+    students: "25",
+    duration: "36hr",
+    views: "2.5k",
+    featured: false,
   },
   {
     id: 5,
-    title: 'Python for Data Science',
-    heading: 'Python DS',
-    subtitle: 'Data science with Python',
-    price: '$89',
-    rating: '⭐ 4.9',
-    image: 'https://via.placeholder.com/300x200',
+    category: "Cyber Security",
+    title: "Ethical Hacking and Penetration Testing",
+    subtitle:
+      "we're your one-stop destination for unlocking your potential and conquering the digital.",
+    price: "$120",
+    rating: 5,
+    image: "assets/course-img/Cyber-Security.jpg",
+    students: "25",
+    duration: "36hr",
+    views: "2.5k",
+    featured: false,
   },
   {
     id: 6,
-    title: 'UI/UX Design',
-    heading: 'Design Masterclass',
-    subtitle: 'UI/UX principles and tools',
-    price: '$79',
-    rating: '⭐ 4.5',
-    image: 'https://via.placeholder.com/300x200',
+    category: "Cyber Security",
+    title: "Network Administration (CCNA)",
+    subtitle:
+      "we're your one-stop destination for unlocking your potential and conquering the digital.",
+    price: "$120",
+    rating: 5,
+    image: "assets/course-img/Cyber-Security.jpg",
+    students: "25",
+    duration: "36hr",
+    views: "2.5k",
+    featured: false,
   },
   {
     id: 7,
-    title: 'Full Stack Development',
-    heading: 'Become Full Stack Dev',
-    subtitle: 'Frontend + Backend',
-    price: '$99',
-    rating: '⭐ 4.8',
-    image: 'https://via.placeholder.com/300x200',
+    category: "Cyber Security",
+    title: "Popular course in Web Development",
+    subtitle:
+      "we're your one-stop destination for unlocking your potential and conquering the digital.",
+    price: "$120",
+    rating: 5,
+    image: "assets/course-img/Cyber-Security.jpg",
+    students: "25",
+    duration: "36hr",
+    views: "2.5k",
+    featured: false,
   },
   {
     id: 8,
-    title: 'Digital Marketing',
-    heading: 'Marketing Masterclass',
-    subtitle: 'SEO, SEM, Social Media',
-    price: '$69',
-    rating: '⭐ 4.6',
-    image: 'https://via.placeholder.com/300x200',
+    category: "Cyber Security",
+    title: "DevOps and Continuous Integration",
+    subtitle:
+      "we're your one-stop destination for unlocking your potential and conquering the digital.",
+    price: "$120",
+    rating: 5,
+    image: "assets/course-img/Cyber-Security.jpg",
+    students: "25",
+    duration: "36hr",
+    views: "2.5k",
+    featured: false,
   },
 ];
 
+const Course = () => {
+  const [selectedCategory, setSelectedCategory] = useState("Show All");
+
+  const filteredCourses =
+    selectedCategory === "Show All"
+      ? courses
+      : courses.filter((course) => course.category === selectedCategory);
 
   return (
     <section className="px-4 lg:px-[100px] w-full bg-black pt-[100px] lg:pt-[150px]">
-      <h5 className="text-center pb-4 text-yellow-300 flex items-center gap-3 justify-center">
+      <h5 className="text-center pb-4 text-yellow-300 flex items-center gap-3 justify-center ">
         <TfiLayoutLineSolid size={32} />
         Popular Courses
         <TfiLayoutLineSolid size={32} />
       </h5>
-      <h2 className="text-5xl font-bold pb-8 text-center text-white pb-4">
+      <h2 className="text-5xl font-bold mb-8 text-center text-white pb-4">
         All <span className="border-b-3 border-yellow-300">Courses</span>
       </h2>
 
+      {/* Nav Tabs */}
+      <nav className="flex gap-4 mb-10 text-md font-semibold justify-center flex-wrap">
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            onClick={() => setSelectedCategory(cat)}
+            className={`px-4 py-2 transition-all duration-300 ease-in-out ${
+              selectedCategory === cat
+                ? "bg-yellow-300 text-black rounded-full"
+                : "bg-black text-white hover:bg-yellow-300 hover:text-black hover:rounded-full"
+            }`}
+          >
+            {cat}
+          </button>
+        ))}
+      </nav>
 
-      <div>
-        
+      {/* Course Cards Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {filteredCourses.map((course) => (
+          <div
+            key={course.id}
+            className="relative rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer bg-white group"
+          >
+            {/* Image */}
+            <img
+              src={course.image}
+              alt={course.title}
+              className="w-full h-56 object-cover transition-transform duration-300"
+            />
+
+            {/* Price Circle */}
+            <div className="absolute top-[170px] right-4 bg-yellow-400 text-black font-bold text-lg px-4 py-2 rounded-full shadow-lg z-10">
+              {course.price}
+            </div>
+
+            <div className="p-4 flex flex-col justify-between h-[calc(100%-224px)]">
+              <div className="flex items-center justify-between mb-3">
+                <span className="px-3 py-1 rounded-full text-sm font-bold bg-yellow-300 text-black">
+                  {course.category}
+                </span>
+                <div className="flex items-center text-yellow-500 text-[1.5rem]">
+                  {"★".repeat(course.rating)}
+                </div>
+              </div>
+              {/* Title */}
+              <h3 className="text-xl font-semibold mb-1 text-black ">
+                {course.title}
+              </h3>
+              {/* Subtitle */}
+              <p className="text-sm mb-4 text-gray-700 ">{course.subtitle}</p>
+              {/* Bottom Row */}
+              <div className="flex justify-between items-center pt-4 border-t border-gray-300 text-gray-600 text-sm ">
+                <span className="flex items-center gap-1"><IoIosPeople size={20} />{course.students}</span>
+                <span className="flex items-center gap-1"><LuClock size={20}/> {course.duration}</span>
+                <span className="flex items-center gap-1"><FaRegComments size={20}/>{course.views}</span>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Course;
