@@ -63,16 +63,20 @@ const Catagories = () => {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-12">
-      <h5 className="text-center pb-4 text-yellow-300 flex items-center gap-3 justify-center"><TfiLayoutLineSolid size={32}/>Popular Categories<TfiLayoutLineSolid size={32}/></h5>
-      <h2 className="text-3xl font-bold mb-8 text-center">
+    <section className="px-4 lg:px-[100px] w-full bg-black pt-6">
+      <h5 className="text-center pb-4 text-yellow-300 flex items-center gap-3 justify-center ">
+        <TfiLayoutLineSolid size={32} />
+        Popular Categories
+        <TfiLayoutLineSolid size={32} />
+      </h5>
+      <h2 className="text-5xl font-bold mb-8 text-center text-white pb-4">
         Course <span className="border-b-2 border-yellow-300">Categories</span>
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 "> 
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
         {courses.map(({ id, icon, title, subtitle }) => (
           <div
             key={id}
-            className="group relative flex flex-col items-center text-center py-5 px-2 bg-black hover:bg-yellow-500 hover:bg-opacity-100 transition-all duration-300 ease-in-out rounded-xl cursor-pointer overflow-hidden"
+            className="group relative flex flex-col items-center text-center py-5 px-4 bg-[#FFFFFF1A] shadow-md hover:bg-yellow-500 hover:bg-opacity-100 transition-all duration-300 ease-in-out rounded-xl cursor-pointer overflow-hidden"
           >
             <div
               className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-300 ease-in-out"
