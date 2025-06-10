@@ -18,13 +18,13 @@ const categories = [
 const courses = [
   {
     id: 1,
-    category: "Cyber Security",
+    category: "Ux/UI Design",
     title: "UI/UX Design for Web and Mobile for Kids",
     subtitle:
       "we're your one-stop destination for unlocking your potential and conquering the digital.",
     price: "$120",
     rating: 5,
-    image: "assets/course-img/Cyber-Security.jpg",
+    image: "assets/course-img/course-img-1.jpg",
     students: "25",
     duration: "36hr",
     views: "2.5k",
@@ -38,7 +38,7 @@ const courses = [
       "we're your one-stop destination for unlocking your potential and conquering the digital.",
     price: "$120",
     rating: 5,
-    image: "assets/course-img/Cyber-Security.jpg",
+    image: "assets/course-img/course-img-2.jpg",
     students: "25",
     duration: "36hr",
     views: "2.5k",
@@ -46,13 +46,13 @@ const courses = [
   },
   {
     id: 3,
-    category: "Cyber Security",
+    category: "Programming",
     title: "Introduction to Python Programming",
     subtitle:
       "we're your one-stop destination for unlocking your potential and conquering the digital.",
     price: "$120",
     rating: 5,
-    image: "assets/course-img/Cyber-Security.jpg",
+    image: "assets/course-img/course-img-3.jpg",
     students: "25",
     duration: "36hr",
     views: "2.5k",
@@ -66,7 +66,7 @@ const courses = [
       "we're your one-stop destination for unlocking your potential and conquering the digital.",
     price: "$120",
     rating: 5,
-    image: "assets/course-img/Cyber-Security.jpg",
+    image: "assets/course-img/course-img-1.jpg",
     students: "25",
     duration: "36hr",
     views: "2.5k",
@@ -74,13 +74,13 @@ const courses = [
   },
   {
     id: 5,
-    category: "Cyber Security",
+    category: "Ethical Hacking",
     title: "Ethical Hacking and Penetration Testing",
     subtitle:
       "we're your one-stop destination for unlocking your potential and conquering the digital.",
     price: "$120",
     rating: 5,
-    image: "assets/course-img/Cyber-Security.jpg",
+    image: "assets/course-img/course-img-2.jpg",
     students: "25",
     duration: "36hr",
     views: "2.5k",
@@ -88,13 +88,13 @@ const courses = [
   },
   {
     id: 6,
-    category: "Cyber Security",
+    category: "Mobile App",
     title: "Network Administration (CCNA)",
     subtitle:
       "we're your one-stop destination for unlocking your potential and conquering the digital.",
     price: "$120",
     rating: 5,
-    image: "assets/course-img/Cyber-Security.jpg",
+    image: "assets/course-img/course-img-3.jpg",
     students: "25",
     duration: "36hr",
     views: "2.5k",
@@ -102,13 +102,13 @@ const courses = [
   },
   {
     id: 7,
-    category: "Cyber Security",
+    category: "Web Development",
     title: "Popular course in Web Development",
     subtitle:
       "we're your one-stop destination for unlocking your potential and conquering the digital.",
     price: "$120",
     rating: 5,
-    image: "assets/course-img/Cyber-Security.jpg",
+    image: "assets/course-img/course-img-1.jpg",
     students: "25",
     duration: "36hr",
     views: "2.5k",
@@ -122,7 +122,7 @@ const courses = [
       "we're your one-stop destination for unlocking your potential and conquering the digital.",
     price: "$120",
     rating: 5,
-    image: "assets/course-img/Cyber-Security.jpg",
+    image: "assets/course-img/course-img-2.jpg",
     students: "25",
     duration: "36hr",
     views: "2.5k",
@@ -139,7 +139,7 @@ const Course = () => {
       : courses.filter((course) => course.category === selectedCategory);
 
   return (
-    <section className="px-4 lg:px-[100px] w-full bg-black pt-[100px] lg:pt-[150px]">
+    <section className="mt-0 px-4 lg:px-[100px] w-full bg-black pt-[100px] lg:pt-[150px]">
       <h5 className="text-center pb-4 text-yellow-300 flex items-center gap-3 justify-center ">
         <TfiLayoutLineSolid size={32} />
         Popular Courses
@@ -158,7 +158,7 @@ const Course = () => {
             className={`px-4 py-2 transition-all duration-300 ease-in-out ${
               selectedCategory === cat
                 ? "bg-yellow-300 text-black rounded-full"
-                : "bg-black text-white hover:bg-yellow-300 hover:text-black hover:rounded-full"
+                : "bg-black text-white hover:bg-yellow-300 hover:text-black hover:rounded-full cursor-pointer"
             }`}
           >
             {cat}
@@ -219,6 +219,7 @@ const Course = () => {
         ))}
       </div>
     </section>
+    
   );
 };
 

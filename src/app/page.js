@@ -6,6 +6,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import Catagories from './components/home-page/Catagories/Catagories';
 import Placement from './components/home-page/Placement/Placement';
 import Course from './components/home-page/Courses/Course';
+import Coursvideo from './components/home-page/Courses/Coursvideo';
+
 
 const page = () => {
   return (
@@ -15,6 +17,8 @@ const page = () => {
       <Catagories/>
       <Placement/>
       <Course/>
+      <Coursvideo/>
+      
     </div>
   )
 }

@@ -39,7 +39,7 @@ export default function Navbar() {
       {/* max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between */}
       <nav className="flex justify-between px-4 lg:px-[100px] py-[1rem]">
         {/* Logo */}
-        <img src="assets\eduden-logo.png" className="w-[180px] h-auto cursor-pointer"></img>
+        <img src="assets\eduden-logo.png" className="w-[120px] lg:w-[180px] h-auto cursor-pointer"></img>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex space-x-8 items-center">
@@ -90,7 +90,7 @@ export default function Navbar() {
         {/* Mobile Menu Icon */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(true)} aria-label="Open Menu">
-            <Menu size={32} />
+            <Menu size={24} color="#ffffff"/>
           </button>
         </div>
       </nav>
@@ -108,7 +108,7 @@ export default function Navbar() {
         <div className="p-4 flex justify-between items-center border-b">
           <img className="w-[150px] h-auto cursor-pointer" src="assets\eduden-logo.png" alt="" />
           <button onClick={() => setIsOpen(false)} aria-label="Close Menu">
-            <X size={32} />
+            <X size={24} color="#ffffff"/>
           </button>
         </div>
 
