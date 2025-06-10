@@ -181,11 +181,11 @@ const Course = () => {
             />
 
             {/* Price Circle */}
-            <div className="absolute top-[170px] right-4 bg-yellow-400 text-black font-bold text-lg px-4 py-2 rounded-full shadow-lg z-10">
+            <div className="absolute top-[180px] right-4 w-20 h-20 bg-yellow-400 text-black font-bold text-lg flex items-center justify-center rounded-full shadow-lg z-10">
               {course.price}
             </div>
 
-            <div className="p-4 flex flex-col justify-between h-[calc(100%-224px)]">
+            <div className="px-4 pt-10 pb-4 flex flex-col justify-between h-[calc(100%-224px)]">
               <div className="flex items-center justify-between mb-3">
                 <span className="px-3 py-1 rounded-full text-sm font-bold bg-yellow-300 text-black">
                   {course.category}
@@ -195,16 +195,24 @@ const Course = () => {
                 </div>
               </div>
               {/* Title */}
-              <h3 className="text-xl font-semibold mb-1 text-black ">
+              <h3 className="text-xl font-bold mb-1 text-black ">
                 {course.title}
               </h3>
               {/* Subtitle */}
               <p className="text-sm mb-4 text-gray-700 ">{course.subtitle}</p>
               {/* Bottom Row */}
-              <div className="flex justify-between items-center pt-4 border-t border-gray-300 text-gray-600 text-sm ">
-                <span className="flex items-center gap-1"><IoIosPeople size={20} />{course.students}</span>
-                <span className="flex items-center gap-1"><LuClock size={20}/> {course.duration}</span>
-                <span className="flex items-center gap-1"><FaRegComments size={20}/>{course.views}</span>
+              <div className="flex justify-between items-center pt-4 border-t border-black text-gray-600 text-sm ">
+                <span className="flex items-center gap-1">
+                  <IoIosPeople size={20} />
+                  {course.students}
+                </span>
+                <span className="flex items-center gap-1">
+                  <LuClock size={20} /> {course.duration}
+                </span>
+                <span className="flex items-center gap-1">
+                  <FaRegComments size={20} />
+                  {course.views}
+                </span>
               </div>
             </div>
           </div>
