@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Catagories from './components/home-page/Catagories/Catagories';
 import Placement from './components/home-page/Placement/Placement';
+import Course from './components/home-page/Courses/Course';
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
       <Banner/>
       <Catagories/>
       <Placement/>
+      <Course/>
     </div>
   )
 }

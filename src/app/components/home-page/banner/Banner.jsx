@@ -57,14 +57,14 @@ const Banner = () => {
                 alt={banner.title}
                 className="w-full h-full object-cover rounded-2xl transform scale-x-[-1]"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-black/90 to-transparent"></div>
 
               <div className="absolute inset-0 flex justify-between items-center px-7">
                 <div className="max-w-xl">
                   <p className="text-sm border border-white rounded-lg px-3 py-2 text-yellow-300 mb-4 inline-block">
                     {banner.toptitle}
                   </p>
-                  <h1 className="text-6xl font-bold mb-4 max-w-xl leading-tight text-white">
+                  <h1 className=" text-[2rem] lg:text-6xl font-bold mb-4 max-w-xl leading-tight text-white">
                     {banner.title}
                   </h1>
                   <p className="text-base max-w-xl mb-4 text-lg text-white">
@@ -76,7 +76,7 @@ const Banner = () => {
                   </button>
                 </div>
 
-                <div className="w-[46px] h-[306px] py-5 bg-yellow-300 rounded-full flex flex-col items-center justify-between">
+                <div className=" hidden lg:flex w-[46px] h-[306px] py-5 bg-yellow-300 rounded-full flex flex-col items-center justify-between">
                   <div className="rotate-90 origin-center text-center flex items-center gap-2 text-black font-medium whitespace-nowrap">
                     follow now
                     <HiOutlineArrowNarrowDown className="-rotate-90" />
@@ -122,10 +122,10 @@ const Banner = () => {
         </Slider>
       </div>
 
-      <section className="w-full px-4 md:px-16 py-16 bg-black">
+      <section className="w-full px-4 md:px-16 pt-[100px] lg:pt-[150px] bg-black">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between gap-10">
           <div className="flex flex-col items-start w-full md:w-1/3">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-10">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-10">
               About Us
             </h2>
             <button className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-500 transition duration-300">
