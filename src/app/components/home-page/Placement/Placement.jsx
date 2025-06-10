@@ -26,39 +26,39 @@ const Placement = () => {
     
       <div className="w-full lg:w-[40%] space-y-12">
         <Marquee
-          speed={20} gradient={true} gradientColor={[248, 251, 253]} pauseOnHover={true} >
-          <img className="h-[24px] sm:h-[28px] md:h-[50px] mx-6" src="assets/amajon.png" alt="Amazon" />
-          <img className="h-[24px] sm:h-[28px] md:h-[40px] mx-6" src="assets/vmware.png" alt="VMware" />
-          <img className="h-[24px] sm:h-[28px] md:h-[60px] mx-6" src="assets/ey.png" alt="EY" />
+          speed={20} gradient={true} gradientColor='black' pauseOnHover={true} >
+          <img className="h-[24px] sm:h-[28px] md:h-[30px] mx-6" src="assets/amajon.png" alt="Amazon" />
+          <img className="h-[24px] sm:h-[28px] md:h-[30px] mx-6" src="assets/vmware.png" alt="VMware" />
+          <img className="h-[24px] sm:h-[28px] md:h-[50px] mx-6" src="assets/ey.png" alt="EY" />
         </Marquee>
 
         <Marquee
           speed={20}
-        
-          gradient={false}
+          gradient={true}
+          gradientColor='black'
           pauseOnHover={true}
           direction="right"
         >
-          <img className="h-[24px] sm:h-[28px] md:h-[40px] mx-6" src="assets/ibm.png" alt="IBM" />
-          <img className="h-[24px] sm:h-[28px] md:h-[40px] mx-6" src="assets/tcs.png" alt="TCS" />
-          <img className="h-[24px] sm:h-[28px] md:h-[40px] mx-6" src="assets/cisco.png" alt="Cisco" />
+          <img className="h-[24px] sm:h-[28px] md:h-[30px] mx-6" src="assets/ibm.png" alt="IBM" />
+          <img className="h-[24px] sm:h-[28px] md:h-[30px] mx-6" src="assets/tcs.png" alt="TCS" />
+          <img className="h-[24px] sm:h-[28px] md:h-[30px] mx-6" src="assets/cisco.png" alt="Cisco" />
         </Marquee>
 
-        <Marquee speed={20} gradient={false} pauseOnHover={true}>
-          <img className="h-[24px] sm:h-[28px] md:h-[40px] mx-6" src="assets/ethicalden.png" alt="EthicalDen" />
-          <img className="h-[24px] sm:h-[28px] md:h-[40px] mx-6" src="assets/accenture.png" alt="Accenture" />
+        <Marquee speed={20} gradient={true} gradientColor='black' pauseOnHover={true}>
+          <img className="h-[24px] sm:h-[28px] md:h-[30px] mx-6" src="assets/ethicalden.png" alt="EthicalDen" />
+          <img className="h-[24px] sm:h-[28px] md:h-[30px] mx-6" src="assets/accenture.png" alt="Accenture" />
         </Marquee>
 
         <Marquee
           speed={20}
-          gradient={false}
-          pauseOnHover={true}
-        
+          gradient={true}
+          gradientColor='black'
+          pauseOnHover={true}        
           direction="right"
         >
-          <img className="h-[24px] sm:h-[28px] md:h-[40px] mx-6" src="assets/paloalto.png" alt="Palo Alto" />
-          <img className="h-[24px] sm:h-[28px] md:h-[40px] mx-6" src="assets/jio.png" alt="Jio" />
-          <img className="h-[24px] sm:h-[28px] md:h-[40px] mx-6" src="assets/deolitte..png" alt="Deloitte" />
+          <img className="h-[24px] sm:h-[28px] md:h-[30px] mx-6" src="assets/paloalto.png" alt="Palo Alto" />
+          <img className="h-[24px] sm:h-[28px] md:h-[30px] mx-6" src="assets/jio.png" alt="Jio" />
+          <img className="h-[24px] sm:h-[28px] md:h-[30px] mx-6" src="assets/deolitte..png" alt="Deloitte" />
         </Marquee>
       </div>
     </div>
