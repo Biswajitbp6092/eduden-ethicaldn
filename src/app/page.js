@@ -12,6 +12,8 @@ import Joinourclan from './components/home-page/Collaboration/Joinourclan';
 import Events from './components/home-page/events/Events';
 import Testimonial from './components/home-page/testimonial/Testimonial';
 import Help from './components/home-page/testimonial/Help';
+import Faq from './components/home-page/Faq/Faq';
+import Footer from './components/home-page/footer/Footer';
 
 
 const page = () => {
@@ -27,7 +29,9 @@ const page = () => {
       <Joinourclan/>
       <Events/>
       <Testimonial/>
-      {/* <Help/> */}
+      <Help/>
+      <Faq/>
+      <Footer/>
       
     </div>
   )

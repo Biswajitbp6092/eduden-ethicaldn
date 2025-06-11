@@ -7,7 +7,7 @@ import { HiOutlineArrowNarrowDown } from "react-icons/hi";
 const Banner = () => {
   const bannerSetting = {
     dots: true,
-    arow:true,
+    arow: true,
     autoplay: true,
     autoplaySpeed: 3000,
     infinite: true,
@@ -84,36 +84,36 @@ const Banner = () => {
 
                   <div className="flex flex-col gap-3 ">
                     <a href="#" target="_blank" rel="noopener noreferrer">
-                    <img
-                      src="/assets/facebook.svg"
-                      alt="Facebook"
-                      className="w-6 h-6"
-                    />
-                  </a>
+                      <img
+                        src="/assets/facebook.svg"
+                        alt="Facebook"
+                        className="w-6 h-6"
+                      />
+                    </a>
 
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    <img
-                      src="/assets/ig.svg"
-                      alt="Instagram"
-                      className="w-6 h-6"
-                    />
-                  </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <img
+                        src="/assets/ig.svg"
+                        alt="Instagram"
+                        className="w-6 h-6"
+                      />
+                    </a>
 
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    <img
-                      src="/assets/youtube.svg"
-                      alt="YouTube"
-                      className="w-6 h-6"
-                    />
-                  </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <img
+                        src="/assets/youtube.svg"
+                        alt="YouTube"
+                        className="w-6 h-6"
+                      />
+                    </a>
 
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    <img
-                      src="/assets/in.svg"
-                      alt="LinkedIn"
-                      className="w-6 h-6"
-                    />
-                  </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <img
+                        src="/assets/in.svg"
+                        alt="LinkedIn"
+                        className="w-6 h-6"
+                      />
+                    </a>
                   </div>
                 </div>
               </div>
