@@ -10,6 +10,8 @@ import Coursvideo from './components/home-page/Courses/Coursvideo';
 import Collaboration from './components/home-page/Collaboration/Collaboration';
 import Joinourclan from './components/home-page/Collaboration/Joinourclan';
 import Events from './components/home-page/events/Events';
+import Testimonial from './components/home-page/testimonial/Testimonial';
+import Help from './components/home-page/testimonial/Help';
 
 
 const page = () => {
@@ -24,6 +26,8 @@ const page = () => {
       <Collaboration/>
       <Joinourclan/>
       <Events/>
+      <Testimonial/>
+      {/* <Help/> */}
       
     </div>
   )
