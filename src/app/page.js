@@ -7,6 +7,9 @@ import Catagories from './components/home-page/Catagories/Catagories';
 import Placement from './components/home-page/Placement/Placement';
 import Course from './components/home-page/Courses/Course';
 import Coursvideo from './components/home-page/Courses/Coursvideo';
+import Collaboration from './components/home-page/Collaboration/Collaboration';
+import Joinourclan from './components/home-page/Collaboration/Joinourclan';
+import Events from './components/home-page/events/Events';
 
 
 const page = () => {
@@ -18,6 +21,9 @@ const page = () => {
       <Placement/>
       <Course/>
       <Coursvideo/>
+      <Collaboration/>
+      <Joinourclan/>
+      <Events/>
       
     </div>
   )

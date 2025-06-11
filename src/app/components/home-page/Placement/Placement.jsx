@@ -25,8 +25,7 @@ const Placement = () => {
 
     
       <div className="w-full lg:w-[40%] space-y-12">
-        <Marquee
-          speed={20} gradient={true} gradientColor='black' pauseOnHover={true} autoFill={true}>
+        <Marquee speed={20} gradient={true} gradientColor='black' pauseOnHover={true} autoFill={true}>
           <img className="h-[24px] sm:h-[28px] md:h-[30px] mx-6" src="assets/amajon.png" alt="Amazon" />
           <img className="h-[24px] sm:h-[28px] md:h-[30px] mx-6" src="assets/vmware.png" alt="VMware" />
           <img className="h-[24px] sm:h-[28px] md:h-[50px] mx-6" src="assets/ey.png" alt="EY" />
