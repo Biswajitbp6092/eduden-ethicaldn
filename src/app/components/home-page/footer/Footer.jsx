@@ -17,7 +17,7 @@ export default function Footer() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="px-4 lg:px-[90px] pt-[50px] grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+      <div className="px-4 lg:px-[90px] pt-[50px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
         {/* Logo & About */}
         <div className="flex flex-col gap-4">
           <img
@@ -45,56 +45,76 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div className="flex flex-col gap-4">
-          <h2 className="text-lg font-semibold">Quick Links</h2>
+        <div className="ml-[0px] md:ml-[100px]">
+          <h2 className="text-lg font-semibold pb-2 lg:pb-6">Quick Link</h2>
           <div className="space-y-2 text-sm">
-            {["Home", "About", "Courses", "Contact"].map((label, i) => (
-              <a
-                key={i}
-                href="#"
-                className="hover:text-yellow-400 flex items-center gap-1 font-semibold"
-              >
-                <IoMdArrowDropright size={22} />
-                {label}
-              </a>
-            ))}
+            <a
+              href="#"
+              className="hover:text-yellow-400 flex items-center gap-1 font-semibold"
+            >
+              <IoMdArrowDropright size={22} /> Home
+            </a>
+            <a
+              href="#"
+              className="hover:text-yellow-400 flex items-center gap-1 font-semibold"
+            >
+              <IoMdArrowDropright size={22} /> About
+            </a>
+            <a
+              href="#"
+              className="hover:text-yellow-400 flex items-center gap-1 font-semibold"
+            >
+              <IoMdArrowDropright size={22} /> Courses
+            </a>
+            <a
+              href="#"
+              className="hover:text-yellow-400 flex items-center gap-1 font-semibold"
+            >
+              <IoMdArrowDropright size={22} /> Contact
+            </a>
           </div>
         </div>
 
         {/* Learning Platform */}
-        <div className="flex flex-col gap-4">
-          <h2 className="text-lg font-semibold">Learning Platform</h2>
-          <div className="space-y-3 text-sm">
-            {[
-              { name: "YouTube", icon: <FaYoutube /> },
-              { name: "Facebook", icon: <FaFacebookF /> },
-              { name: "Instagram", icon: <FaInstagram /> },
-            ].map((platform, i) => (
-              <a key={i} href="#" className="flex items-center space-x-3">
-                <span className="bg-yellow-400 text-black p-1.5 rounded-full text-base">
-                  {platform.icon}
-                </span>
-                <span className="font-semibold">{platform.name}</span>
-              </a>
-            ))}
+        <div className="text-white w-fit ml-[0px] xl:ml-[100px]">
+          <h2 className="text-xl font-semibold pb-2 lg:pb-6">Learning platform</h2>
+          <div className="space-y-4 text-base">
+            <a href="#" className="flex items-center space-x-3">
+              <span className="bg-yellow-400 text-black p-1.5 rounded-full text-base">
+                <FaYoutube />
+              </span>
+              <span className="font-semibold">YouTube</span>
+            </a>
+            <a href="#" className="flex items-center space-x-3">
+              <span className="bg-yellow-400 text-black p-1.5 rounded-full text-base">
+                <FaFacebookF />
+              </span>
+              <span className="font-semibold">Facebook</span>
+            </a>
+            <a href="#" className="flex items-center space-x-3">
+              <span className="bg-yellow-400 text-black p-1.5 rounded-full text-base">
+                <FaInstagram />
+              </span>
+              <span className="font-semibold">Instagram</span>
+            </a>
           </div>
         </div>
 
         {/* Contact */}
-        <div className="flex flex-col gap-4">
-          <h2 className="text-lg font-semibold">Get In Touch</h2>
-          <div className="text-sm space-y-2">
-            <p>
+        <div className="flex flex-col ml-1 md:ml-[100px]">
+          <h2 className="text-lg font-semibold pb-2 lg:pb-6">Get In Touch</h2>
+          <div className="text-sm space-y-3">
+            <p className="cursor-pointer">
               <span className="font-semibold">Phone:</span>
               <br />
               01745349414
             </p>
-            <p>
+            <p className="cursor-pointer">
               <span className="font-semibold">Email:</span>
               <br />
               bd@eduden.com
             </p>
-            <p>
+            <p className="cursor-pointer">
               <span className="font-semibold">Location:</span>
               <br />
               Dhaka, kollanpur, bridge er niche.

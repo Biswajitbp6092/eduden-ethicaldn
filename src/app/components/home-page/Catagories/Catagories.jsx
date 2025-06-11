@@ -64,15 +64,16 @@ const Catagories = () => {
 
   return (
     <section className="px-4 lg:px-[100px] w-full bg-black pt-[100px] lg:pt-[150px]">
-      <h5 className="text-center pb-4 text-yellow-300 flex items-center gap-3 justify-center ">
+      <h5 className="text-center pb-2 lg:pb-4 text-yellow-300 flex items-center gap-3 justify-center ">
         <TfiLayoutLineSolid size={32} />
         Popular Categories
         <TfiLayoutLineSolid size={32} />
       </h5>
-      <h2 className="text-5xl font-bold mb-8 text-center text-white pb-4">
+      <h2 className="text-[2rem] lg:text-6xl font-bold mb-8 text-center text-white pb-4">
         Course <span className="border-b-3 border-yellow-300">Catagories</span>
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
         {courses.map(({ id, icon, title, subtitle }) => (
           <div
             key={id}

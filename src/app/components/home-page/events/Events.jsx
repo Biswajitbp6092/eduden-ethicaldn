@@ -62,10 +62,10 @@ const Events = () => {
 
   return (
     <section className="bg-black pt-[100px] lg:pt-[150px] px-4 lg:px-[100px]">
-      <h2 className="text-5xl font-bold text-center text-white pb-2">
+      <h2 className="text-[2rem] lg:text-6xl font-bold text-left lg:text-center text-white pb-2">
         Upcoming <span className="border-b-3 border-yellow-300">Events</span>
       </h2>
-      <p className="text-white items-center text-center pt-5 lg:px-[200px] text-lg">
+      <p className="text-white items-center text-left lg:text-center pt-2 lg:pt-5 xl:px-[200px] leading-loose text-lg">
         Well, because we’re not your grandma’s boring old school! At Edu-Den,
         we’re the rebels of education, the mavericks of learning, and the
         champions of fun-filled knowledge. We’ll teach you how to slay dragons
@@ -73,7 +73,7 @@ const Events = () => {
         coffee.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-[80px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 pt-[80px]">
         {eventsDetails.map((event) => (
           <div
             key={event.id}

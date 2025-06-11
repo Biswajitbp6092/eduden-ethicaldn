@@ -140,17 +140,17 @@ const Course = () => {
 
   return (
     <section className="mt-0 px-4 lg:px-[100px] w-full bg-black pt-[100px] lg:pt-[150px]">
-      <h5 className="text-center pb-4 text-yellow-300 flex items-center gap-3 justify-center ">
+      <h5 className="text-center pb-2 lg:pb-4 text-yellow-300 flex items-center gap-3 justify-center ">
         <TfiLayoutLineSolid size={32} />
         Popular Courses
         <TfiLayoutLineSolid size={32} />
       </h5>
-      <h2 className="text-5xl font-bold mb-8 text-center text-white pb-4">
+      <h2 className="text-[2rem] lg:text-6xl font-bold mb-8 text-center text-white pb-4">
         All <span className="border-b-3 border-yellow-300">Courses</span>
       </h2>
 
       {/* Nav Tabs */}
-      <nav className="flex gap-4 mb-10 text-md font-semibold justify-center flex-wrap">
+      <nav className="flex gap-2.5 mb-10 text-md font-semibold flex-wrap">
         {categories.map((cat) => (
           <button
             key={cat}
@@ -167,7 +167,7 @@ const Course = () => {
       </nav>
 
       {/* Course Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
         {filteredCourses.map((course) => (
           <div
             key={course.id}
