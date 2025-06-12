@@ -21,7 +21,7 @@ const Help = () => {
             </p>
           </div>
 
-          <button className="bg-yellow-400 hover:bg-yellow-500 cursor-pointer text-black px-6 py-2 mt-6 lg:mt-0 rounded-full text-sm font-semibold transition self-start lg:self-auto">
+          <button className="bg-yellow-400 hover:bg-yellow-300 hover:drop-shadow-[0_0_5px_#FFD000] cursor-pointer text-black px-6 py-2 mt-6 lg:mt-0 rounded-full text-sm font-semibold transition self-start lg:self-auto">
             Contact Us
           </button>
         </div>

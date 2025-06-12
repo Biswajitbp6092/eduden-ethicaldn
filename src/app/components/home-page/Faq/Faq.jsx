@@ -86,7 +86,7 @@ const Faq = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <button className="bg-yellow-400 hover:bg-yellow-500 cursor-pointer text-black px-6 py-2 rounded-full text-sm font-semibold transition">
+          <button className="bg-yellow-400 hover:bg-yellow-300 hover:drop-shadow-[0_0_5px_#FFD000] cursor-pointer text-black px-6 py-2 rounded-full text-sm font-semibold transition">
             Contact Us
           </button>
         </div>

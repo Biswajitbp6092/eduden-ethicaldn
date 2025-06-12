@@ -30,7 +30,6 @@ const courses = [
     duration: "36hr",
     views: "2.5k",
     featured: false,
-    
   },
   {
     id: 2,
@@ -219,11 +218,8 @@ const Course = () => {
               </div>
             </div>
 
-
-
-
-
-            <div className="absolute inset-0 bg-yellow-300 text-black p-4 top-[247px] opacity-0 group-hover:opacity-100 group-hover:top-0 transition-all duration-300 ease-in-out flex flex-col justify-between z-20">
+            {/* hover overlay */}
+            <div className="absolute inset-0 bg-yellow-500 text-black p-4 top-[247px] opacity-0 group-hover:opacity-100 group-hover:top-0 transition-all duration-300 ease-in-out flex flex-col justify-between z-20">
               <div>
                 <div className="flex items-center text-center justify-between mb-3">
                   <span className="px-3 py-1 rounded-full text-sm font-bold bg-black text-white font-bold">
@@ -238,13 +234,18 @@ const Course = () => {
                   {course.subtitle} {course.subtitle} {course.subtitle}
                 </p>
               </div>
-              
-              <div className=" flex justify-between item-center text-center">
-                <button className="bg-black px-4 py-1 rounded-full text-white text-md">Enroll Now</button>
-                <div><BsArrowRight size={32} className="text-black" /></div>
-                <div className="bg-black px-4 py-1 rounded-full text-white text-md">{course.price}</div>
-              </div>
 
+              <div className=" flex justify-between item-center text-center">
+                <button className="bg-black px-4 py-1 rounded-full text-white text-md">
+                  Enroll Now
+                </button>
+                <div>
+                  <BsArrowRight size={32} className="text-black" />
+                </div>
+                <div className="bg-black px-4 py-1 rounded-full text-white text-md">
+                  {course.price}
+                </div>
+              </div>
 
               {/* Bottom Row */}
               <div className="flex justify-between items-center pt-4 border-t border-black text-gray-600 text-sm ">
