@@ -33,8 +33,7 @@ const page = () => {
       <Testimonial/>
       <Help/>
       <Faq/>
-      <Footer/>
-      
+      <Footer/>      
     </div>
   )
 }

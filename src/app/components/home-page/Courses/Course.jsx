@@ -29,6 +29,7 @@ const courses = [
     duration: "36hr",
     views: "2.5k",
     featured: false,
+    
   },
   {
     id: 2,
@@ -194,6 +195,7 @@ const Course = () => {
                   {"★".repeat(course.rating)}
                 </div>
               </div>
+
               {/* Title */}
               <h3 className="text-xl font-bold mb-1 text-black ">
                 {course.title}
@@ -215,11 +217,50 @@ const Course = () => {
                 </span>
               </div>
             </div>
+
+
+
+
+
+            <div className="absolute inset-0 bg-yellow-300 text-black p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between z-20">
+              <div>
+                <div className="flex items-center text-center justify-between mb-3">
+                  <span className="px-3 py-1 rounded-full text-sm font-bold bg-black text-white font-bold">
+                    {course.category}
+                  </span>
+                  <div className="flex items-center text-black text-[1.5rem]">
+                    {"★".repeat(course.rating)}
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold mb-2">{course.title}</h3>
+                <p className="text-sm leading-snug">
+                  {course.subtitle} {course.subtitle} {course.subtitle}
+                </p>
+              </div>
+              
+              <div className=" flex justify-between item-center text-center">
+                <button className="bg-black px-4 py-1 rounded-full text-white text-md">Enroll Now</button>
+                <div></div>
+                <div className="bg-black px-4 py-1 rounded-full text-white text-md">{course.price}</div>
+              </div>
+
+
+              <div className="flex justify-between items-center text-sm mt-4 border-t border-black pt-4">
+                <span className="flex items-center gap-1">
+                  <IoIosPeople size={18} /> {course.students}
+                </span>
+                <span className="flex items-center gap-1">
+                  <LuClock size={18} /> {course.duration}
+                </span>
+                <span className="flex items-center gap-1">
+                  <FaRegComments size={18} /> {course.views}
+                </span>
+              </div>
+            </div>
           </div>
         ))}
       </div>
     </section>
-    
   );
 };
 
