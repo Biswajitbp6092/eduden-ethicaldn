@@ -48,7 +48,7 @@ const Banner = () => {
 
   return (
     <div className="w-full h-auto bg-black overflow-hidden">
-      <div className="px-4 lg:px-8 xl:px-[100px] w-full pt-[5rem]">
+      <div className="px-4 lg:px-8 xl:px-[100px] w-full pt-[1rem]">
         <Slider {...bannerSetting}>
           {bannerContent.map((banner) => (
             <div key={banner.id} className="relative h-[600px]">
