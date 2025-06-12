@@ -17,13 +17,13 @@ export default function Footer() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="px-4 lg:px-[90px] pt-[50px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+      <div className="px-8 lg:px-[90px] pt-[50px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
         {/* Logo & About */}
         <div className="flex flex-col gap-4">
           <img
             src="/assets/eduden-logo.png"
             className="w-[120px] lg:w-[180px] h-auto cursor-pointer"
-            alt="Eduden Logo"
+            alt="Eduden Logo" 
           />
           <p className="text-sm text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

@@ -6,8 +6,8 @@ import { HiOutlineArrowNarrowDown } from "react-icons/hi";
 
 const Banner = () => {
   const bannerSetting = {
-    dots: true,
-    arow: true,
+    dots: false,
+    arow: false,
     autoplay: true,
     autoplaySpeed: 3000,
     infinite: true,
@@ -48,7 +48,7 @@ const Banner = () => {
 
   return (
     <div className="w-full h-auto bg-black">
-      <div className="px-4 lg:px-[100px] w-full pt-[5rem]">
+      <div className="px-4 lg:px-8 xl:px-[100px] w-full pt-[5rem]">
         <Slider {...bannerSetting}>
           {bannerContent.map((banner) => (
             <div key={banner.id} className="relative h-[600px]">
@@ -122,8 +122,8 @@ const Banner = () => {
         </Slider>
       </div>
 
-      <section className="w-full px-4 md:px-16 pt-[100px] lg:pt-[150px] bg-black">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between gap-10">
+      <section className="px-4 lg:px-8 xl:px-[100px] w-full bg-black pt-[100px] lg:pt-[150px]">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-10">
           <div className="flex flex-col items-start w-full md:w-1/3">
             <h2 className="text-[2rem] lg:text-6xl font-bold text-white lg:mb-10">
               About Us

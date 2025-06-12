@@ -53,11 +53,11 @@ const Testimonial = () => {
           alt="Testimonial Background"
         />
 
-        <div className="relative z-10 h-full flex items-center justify-center px-4 lg:px-[100px]">
+        <div className="relative z-10 h-full flex items-center justify-center px-4 lg:px-8 xl:px-[100px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
             {/* Left: Testimonial Slider */}
 
-            <div className="max-w-xl">
+            <div className="max-w-xl order-2 md:order-1">
               <Slider {...settings}>
                 {testimonial.map((test) => (
                   <div
@@ -94,7 +94,7 @@ const Testimonial = () => {
             </div>
 
             {/* Right: Text Content */}
-            <div className="text-white max-w-xl">
+            <div className="text-white max-w-xl order-1 md:order-2">
               <h5 className="text-yellow-400 text-2xl mb-2">Testimonial</h5>
               <h2 className=" text-4xl lg:text-[50px] font-bold mb-4 leading-snug">
                 What students say

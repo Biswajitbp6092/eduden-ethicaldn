@@ -61,7 +61,7 @@ const Events = () => {
   ];
 
   return (
-    <section className="bg-black pt-[100px] lg:pt-[150px] px-4 lg:px-[100px]">
+    <section className="bg-black pt-[100px] lg:pt-[150px] px-4 lg:px-8 xl:px-[100px]">
       <h2 className="text-[2rem] lg:text-6xl font-bold text-left lg:text-center text-white pb-2">
         Upcoming <span className="border-b-3 border-yellow-300">Events</span>
       </h2>
@@ -77,7 +77,7 @@ const Events = () => {
         {eventsDetails.map((event) => (
           <div
             key={event.id}
-            className="relative rounded-lg overflow-hidden shadow-md h-[419px] w-[100%] max-w-[419px] mx-auto"
+            className="relative rounded-lg overflow-hidden shadow-md h-[419px] w-[100%] mx-auto"
           >
             <img
               src={event.image}

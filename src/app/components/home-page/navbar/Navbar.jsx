@@ -36,13 +36,14 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-black shadow fixed top-0 left-0 z-50">
-      {/* max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between */}
-      <nav className="flex justify-between px-4 lg:px-[100px] py-[1rem]">
+
+      
+      <nav className="flex justify-between px-6 lg:px-8 xl:px-[100px] py-[2rem] lg:py-[1rem]">
         {/* Logo */}
         <img src="assets\eduden-logo.png" className="w-[120px] lg:w-[180px] h-auto cursor-pointer"></img>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex space-x-8 items-center">
+        <div className="hidden lg:flex space-x-8 items-center">
           {navLinks.map((link) => {
             if (link.submenu) {
               return (
@@ -79,7 +80,7 @@ export default function Navbar() {
         </div>
 
         {/* Enroll Now Button */}
-        <div className="hidden md:flex">
+        <div className="hidden lg:flex">
           <Link href="#">
             <button className="bg-transparent text-white w-[140px] h-[40px] rounded-full border cursor-pointer border-yellow-300 hover:bg-yellow-300 hover:text-black transition">
               Enroll Now
@@ -88,9 +89,9 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Icon */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button onClick={() => setIsOpen(true)} aria-label="Open Menu">
-            <Menu size={24} color="#ffffff"/>
+            <Menu size={28} className="text-yellow-300"/>
           </button>
         </div>
       </nav>
@@ -98,7 +99,7 @@ export default function Navbar() {
       {/* Mobile Sidebar */}
       <div
         className={clsx(
-          "fixed top-0 left-0 h-full w-full bg-black shadow-lg z-50 transform transition-transform duration-300 ease-in-out",
+          "fixed top-0 left-0 h-full w-full bg-black shadow-lg z-50 transform transition-transform duration-300 ease-in-out px-4",
           {
             "-translate-x-full": !isOpen,
             "translate-x-0": isOpen,
@@ -108,7 +109,7 @@ export default function Navbar() {
         <div className="p-4 flex justify-between items-center border-b">
           <img className="w-[150px] h-auto cursor-pointer" src="assets\eduden-logo.png" alt="" />
           <button onClick={() => setIsOpen(false)} aria-label="Close Menu">
-            <X size={24} color="#ffffff"/>
+            <X size={28} className="text-yellow-300"/>
           </button>
         </div>
 

@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 const Placement = () => {
   return (
-    <div className="bg-black text-white pt-[100px] lg:pt-[150px] px-4 lg:px-[100px] flex flex-col lg:flex-row justify-between items-center gap-12">
+    <div className="bg-black text-white pt-[100px] px-4 lg:px-8 xl:px-[100px] lg:pt-[150px] flex flex-col lg:flex-row justify-between items-center gap-12">
      
       <div className="w-full lg:w-[60%] mb-10 lg:mb-0">
         <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl pb-5 leading-tight lg:w-lg">

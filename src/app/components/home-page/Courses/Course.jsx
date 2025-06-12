@@ -139,7 +139,7 @@ const Course = () => {
       : courses.filter((course) => course.category === selectedCategory);
 
   return (
-    <section className="mt-0 px-4 lg:px-[100px] w-full bg-black pt-[100px] lg:pt-[150px]">
+    <section className="mt-0 px-4 lg:px-8 xl:px-[100px] w-full bg-black pt-[100px] lg:pt-[150px]">
       <h5 className="text-center pb-2 lg:pb-4 text-yellow-300 flex items-center gap-3 justify-center ">
         <TfiLayoutLineSolid size={32} />
         Popular Courses
