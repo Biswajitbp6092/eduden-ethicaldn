@@ -34,7 +34,7 @@ export default function Footer() {
               (Icon, i) => (
                 <a
                   key={i}
-                  className="p-2 rounded-full bg-yellow-400 text-black cursor-pointer transition duration-300 hover:drop-shadow-[0_0_15px_#ca8a04]"
+                  className="p-2 rounded-full bg-yellow-400 text-black cursor-pointer transition duration-300 hover:scale-110 hover:drop-shadow-[0_0_15px_#ca8a04]"
                   href="#"
                 >
                   <Icon />

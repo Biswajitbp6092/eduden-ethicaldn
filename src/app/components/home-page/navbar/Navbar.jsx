@@ -35,8 +35,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="w-full bg-black shadow fixed top-0 left-0 z-50">
-
+    <header className="w-full bg-black shadow-lg sticky top-0 z-50">
       
       <nav className="flex justify-between px-6 lg:px-8 xl:px-[100px] py-[2rem] lg:py-[1rem]">
         {/* Logo */}
@@ -99,7 +98,7 @@ export default function Navbar() {
       {/* Mobile Sidebar */}
       <div
         className={clsx(
-          "fixed top-0 left-0 h-full w-full bg-black shadow-lg z-50 transform transition-transform duration-300 ease-in-out px-4",
+          "fixed top-0 left-0 h-full w-full bg-black shadow-lg z-50 transform transition-transform duration-300 ease-in-out px-4 py",
           {
             "-translate-x-full": !isOpen,
             "translate-x-0": isOpen,

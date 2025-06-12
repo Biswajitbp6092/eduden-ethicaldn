@@ -48,7 +48,7 @@ const Faq = () => {
       </h2>
 
       {/* FAQ & Contact Row */}
-      <div className="flex flex-col lg:flex-row gap-10 min-w-0">
+      <div className="flex flex-col lg:flex-row gap-20 min-w-0">
         {/* FAQ Accordion */}
         <div className="flex-1 space-y-4">
           {faqs.map((faq, index) => (

@@ -47,7 +47,7 @@ const Banner = () => {
   ];
 
   return (
-    <div className="w-full h-auto bg-black">
+    <div className="w-full h-auto bg-black overflow-hidden">
       <div className="px-4 lg:px-8 xl:px-[100px] w-full pt-[5rem]">
         <Slider {...bannerSetting}>
           {bannerContent.map((banner) => (
@@ -76,42 +76,42 @@ const Banner = () => {
                   </button>
                 </div>
 
-                <div className=" hidden lg:flex w-[46px] h-[306px] py-5 bg-yellow-300 rounded-full flex flex-col items-center justify-between">
-                  <div className="rotate-90 origin-center text-center flex items-center gap-2 text-black font-medium whitespace-nowrap">
+                <div className="hidden md:flex w-[46px] h-[320px] bg-yellow-400 flex flex-col justify-between items-center rounded-full">
+                  <div className=" rotate-90 whitespace-nowrap pl-[6rem] font-bold">
                     follow now
-                    <HiOutlineArrowNarrowDown className="-rotate-90" />
-                  </div>
+                  </div>                 
 
-                  <div className="flex flex-col gap-3 ">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                  <div className="flex flex-col items-center gap-2 py-2">
+                    <HiOutlineArrowNarrowDown size={40} className="pb-4" />
+                    <a href="#" target="_blank" rel="">
                       <img
                         src="/assets/facebook.svg"
                         alt="Facebook"
-                        className="w-6 h-6"
+                        className="w-7 h-7 cursor-pointer transition duration-300 hover:scale-110 hover:drop-shadow-[0_0_5px_#000000]"
                       />
                     </a>
 
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="#" target="_blank" rel="">
                       <img
                         src="/assets/ig.svg"
                         alt="Instagram"
-                        className="w-6 h-6"
+                        className="w-7 h-7 cursor-pointer transition duration-300 hover:scale-110 hover:drop-shadow-[0_0_5px_#000000]"
                       />
                     </a>
 
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="#" target="_blank" rel="">
                       <img
                         src="/assets/youtube.svg"
                         alt="YouTube"
-                        className="w-6 h-6"
+                        className="w-7 h-7 cursor-pointer transition duration-300 hover:scale-110 hover:drop-shadow-[0_0_5px_#000000]"
                       />
                     </a>
 
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="#" target="_blank" rel="">
                       <img
                         src="/assets/in.svg"
                         alt="LinkedIn"
-                        className="w-6 h-6"
+                        className="w-7 h-7 cursor-pointer transition duration-300 hover:scale-110 hover:drop-shadow-[0_0_5px_#000000]"
                       />
                     </a>
                   </div>
@@ -120,42 +120,7 @@ const Banner = () => {
             </div>
           ))}
         </Slider>
-      </div>
-
-      <section className="px-4 lg:px-8 xl:px-[100px] w-full bg-black pt-[100px] lg:pt-[150px]">
-        <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-10">
-          <div className="flex flex-col items-start w-full md:w-1/3">
-            <h2 className="text-[2rem] lg:text-6xl font-bold text-white lg:mb-10">
-              About Us
-            </h2>
-            <button className=" hidden md:block bg-yellow-400 text-black font-semibold px-6 py-2 mt-5 rounded-full hover:bg-yellow-500 transition duration-300">
-              Read More
-            </button>
-          </div>
-
-          <div className="w-full md:w-2/3 text-white text-base leading-relaxed">
-            <p className="">
-              Well, because we’re not your grandma’s boring old school! At
-              Edu-Den, we’re the rebels of education, the mavericks of learning,
-              and the champions of fun-filled knowledge. We’ll teach you how to
-              slay dragons and code websites, all while cracking jokes and
-              sipping on virtual coffee. So, why settle for snooze-worthy
-              lectures when you can join the Edu-Den revolution? Let’s make
-              learning epic together!
-            </p>
-            <p className="pt-6">
-              Well, because we’re not your grandma’s boring old school! At
-              Edu-Den, we’re the rebels of education, the mavericks of learning,
-              and the champions of fun-filled knowledge. We’ll teach you how to
-              slay dragons and code websites, all while cracking jokes and
-              sipping on virtual coffee.
-            </p>
-          </div>
-          <button className="self-start block md:hidden bg-yellow-400 text-black font-semibold px-6 py-2 rounded-full hover:bg-yellow-500 transition duration-300">
-            Read More
-          </button>
-        </div>
-      </section>
+      </div>      
     </div>
   );
 };

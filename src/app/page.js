@@ -14,6 +14,7 @@ import Testimonial from './components/home-page/testimonial/Testimonial';
 import Help from './components/home-page/testimonial/Help';
 import Faq from './components/home-page/Faq/Faq';
 import Footer from './components/home-page/footer/Footer';
+import Aboutus from './components/home-page/banner/Aboutus';
 
 
 const page = () => {
@@ -21,6 +22,7 @@ const page = () => {
     <div>
       <Navbar/>
       <Banner/>
+      <Aboutus/>
       <Catagories/>
       <Placement/>
       <Course/>
