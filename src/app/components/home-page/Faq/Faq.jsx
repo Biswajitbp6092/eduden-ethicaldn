@@ -41,7 +41,7 @@ const Faq = () => {
   };
 
   return (
-    <section className="bg-black text-white pt-[100px] lg:pt-[150px] px-4 lg:px-20 py-16">
+    <section className="bg-black text-white pt-[100px] lg:pt-[150px] px-4 lg:px-20 py-16 pb-[100px] lg:pb-[150px]">
       {/* Heading */}
       <h2 className="text-[2rem] lg:text-6xl font-bold leading-normal text-white pb-8 lg:pb-[80px]">
       <span className="border-b-3 border-yellow-300">Frequently</span> <br /> Asked Question
@@ -79,7 +79,7 @@ const Faq = () => {
         </div>
 
         {/* Contact Box */}
-        <div className="bg-[#1e1e1e] flex-shrink-0 flex flex-col justify-center items-center p-8 rounded-lg text-center  lg:max-w-md mx-auto">
+        <div className="bg-[#1e1e1e] flex-shrink-0 flex flex-col justify-center items-center p-8 rounded-lg text-center  lg:max-w-md lg:mx-auto">
           <div className="mb-4"><LiaSmsSolid size={100} /></div>
           <h3 className="text-xl font-semibold mb-2">Do you have more questions?</h3>
           <p className="text-sm text-gray-400 mb-6">
