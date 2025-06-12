@@ -19,7 +19,7 @@ import Footer from './components/home-page/footer/Footer';
 const page = () => {
   return (
     <div>
-      {/* <Navbar/> */}
+      <Navbar/>
       <Banner/>
       <Catagories/>
       <Placement/>
