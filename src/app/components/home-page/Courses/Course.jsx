@@ -4,6 +4,7 @@ import { TfiLayoutLineSolid } from "react-icons/tfi";
 import { IoIosPeople } from "react-icons/io";
 import { LuClock } from "react-icons/lu";
 import { FaRegComments } from "react-icons/fa6";
+import { BsArrowRight } from "react-icons/bs";
 
 const categories = [
   "Show All",
@@ -172,13 +173,13 @@ const Course = () => {
         {filteredCourses.map((course) => (
           <div
             key={course.id}
-            className="relative rounded-xl shadow-md overflow-hidden transition-all duration-300 cursor-pointer bg-white group"
+            className="relative rounded-xl shadow-md overflow-hidden cursor-pointer bg-white group"
           >
             {/* Image */}
             <img
               src={course.image}
               alt={course.title}
-              className="w-full h-56 object-cover transition-transform duration-300"
+              className="w-full h-56 object-cover"
             />
 
             {/* Price Circle */}
@@ -222,7 +223,7 @@ const Course = () => {
 
 
 
-            <div className="absolute inset-0 bg-yellow-300 text-black p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between z-20">
+            <div className="absolute inset-0 bg-yellow-300 text-black p-4 top-[247px] opacity-0 group-hover:opacity-100 group-hover:top-0 transition-all duration-300 ease-in-out flex flex-col justify-between z-20">
               <div>
                 <div className="flex items-center text-center justify-between mb-3">
                   <span className="px-3 py-1 rounded-full text-sm font-bold bg-black text-white font-bold">
@@ -240,20 +241,23 @@ const Course = () => {
               
               <div className=" flex justify-between item-center text-center">
                 <button className="bg-black px-4 py-1 rounded-full text-white text-md">Enroll Now</button>
-                <div></div>
+                <div><BsArrowRight size={32} className="text-black" /></div>
                 <div className="bg-black px-4 py-1 rounded-full text-white text-md">{course.price}</div>
               </div>
 
 
-              <div className="flex justify-between items-center text-sm mt-4 border-t border-black pt-4">
+              {/* Bottom Row */}
+              <div className="flex justify-between items-center pt-4 border-t border-black text-gray-600 text-sm ">
                 <span className="flex items-center gap-1">
-                  <IoIosPeople size={18} /> {course.students}
+                  <IoIosPeople size={20} />
+                  {course.students}
                 </span>
                 <span className="flex items-center gap-1">
-                  <LuClock size={18} /> {course.duration}
+                  <LuClock size={20} /> {course.duration}
                 </span>
                 <span className="flex items-center gap-1">
-                  <FaRegComments size={18} /> {course.views}
+                  <FaRegComments size={20} />
+                  {course.views}
                 </span>
               </div>
             </div>
