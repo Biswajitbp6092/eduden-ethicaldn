@@ -48,7 +48,7 @@ const Faq = () => {
       </h2>
 
       {/* FAQ & Contact Row */}
-      <div className="flex flex-col lg:flex-row gap-20 min-w-0">
+      <div className="flex flex-col lg:flex-row lg:gap-[40px] xl:gap-[80px] 2xl:gap-[200px] min-w-0">
         {/* FAQ Accordion */}
         <div className="flex-1 space-y-4">
           {faqs.map((faq, index) => (
@@ -79,7 +79,7 @@ const Faq = () => {
         </div>
 
         {/* Contact Box */}
-        <div className="bg-[#1e1e1e] flex-shrink-0 flex flex-col justify-center items-center p-8 rounded-lg text-center  lg:max-w-md lg:mx-auto">
+        <div className="bg-[#1e1e1e] flex-shrink-0 flex flex-col justify-center items-center p-8 rounded-lg text-center lg:max-w-sm lg:mx-auto">
           <div className="mb-4"><LiaSmsSolid size={100} /></div>
           <h3 className="text-xl font-semibold mb-2">Do you have more questions?</h3>
           <p className="text-sm text-gray-400 mb-6">

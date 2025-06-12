@@ -70,7 +70,7 @@ const Banner = () => {
                   <p className="text-base max-w-xl mb-4 text-lg text-white">
                     {banner.subtitle}
                   </p>
-                  <button className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-500 transition duration-300 flex items-center gap-2 cursor-pointer">
+                  <button className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-300 hover:drop-shadow-[0_0_5px_#FFD000] transition duration-300 flex items-center gap-2 cursor-pointer">
                     {banner.button}
                     <GoArrowDownRight />
                   </button>

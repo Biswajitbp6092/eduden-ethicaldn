@@ -47,11 +47,11 @@ export default function Navbar() {
             if (link.submenu) {
               return (
                 <div key={link.name} className="relative group">
-                  <button className="flex items-center gap-1 text-white hover:text-yellow-300 font-medium">
+                  <button className="flex items-center gap-1 text-white hover:text-yellow-300 font-medium cursor-pointer">
                     {link.name}
                     <ChevronDown size={16} />
                   </button>
-                  <div className="absolute left-0 top-full mt-4 bg-black shadow-lg rounded w-48 opacity-0 group-hover:opacity-100 transition duration-200 ease-in-out">
+                  <div className="absolute left-0 top-full mt-4 bg-black shadow-lg rounded w-48 hidden group-hover:block transition duration-200 ease-in-out">
                     {link.submenu.map((sublink) => (
                       <Link
                         key={sublink.name}
@@ -70,7 +70,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-white hover:text-yellow-300 transition font-medium"
+                className="text-white hover:text-yellow-300 transition font-medium "
               >
                 {link.name}
               </Link>

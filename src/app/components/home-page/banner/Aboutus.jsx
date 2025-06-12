@@ -8,7 +8,7 @@ const Aboutus = () => {
             <h2 className="text-[2rem] lg:text-6xl font-bold text-white lg:mb-10">
               About Us
             </h2>
-            <button className=" hidden md:block bg-yellow-400 text-black font-semibold px-6 py-2 mt-5 rounded-full hover:bg-yellow-500 transition duration-300">
+            <button className="hidden md:block bg-yellow-400 text-black font-semibold px-6 py-2 mt-5 rounded-full hover:bg-yellow-300 hover:drop-shadow-[0_0_5px_#FFD000] transition duration-300 cursor-pointer">
               Read More
             </button>
           </div>

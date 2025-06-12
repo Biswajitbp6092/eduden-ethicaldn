@@ -77,12 +77,12 @@ const Events = () => {
         {eventsDetails.map((event) => (
           <div
             key={event.id}
-            className="relative rounded-lg overflow-hidden shadow-md h-[419px] w-[100%] mx-auto"
+            className="group relative rounded-lg overflow-hidden shadow-md h-[419px] w-[100%] mx-auto cursor-pointer"
           >
             <img
               src={event.image}
               alt={event.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110"
             />
 
             
